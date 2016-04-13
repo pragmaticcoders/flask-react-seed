@@ -1,0 +1,4 @@
+.DS_Store
+src/app/dist/**
+!src/app/dist/.gitkeep
+node_modules/
