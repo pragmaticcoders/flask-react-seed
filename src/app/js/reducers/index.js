@@ -1,1 +1,7 @@
-export {default as Sample} from './Sample';
+import Sample from './Sample';
+import About from './About';
+
+export {
+  Sample,
+  About
+};

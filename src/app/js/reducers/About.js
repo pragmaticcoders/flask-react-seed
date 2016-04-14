@@ -3,12 +3,13 @@ import { createReducer } from 'redux-immutablejs';
 import {Map} from 'immutable';
 
 let defaultState = Map({
-  title: 'Home'
+  fetching: false
 });
 
 
 export default createReducer(defaultState, {
-  [ActionTypes.TITLE_CHANGED]: (state, action) => state.merge({
-    title: action.text
+  [ActionTypes.ABOUT_RECIVED]: (state, action) => state.merge(action.data),
+  [ActionTypes.ABOUT_REQUESTED]: (state, action) => state.merge({
+    fetching: true
   })
 });

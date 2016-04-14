@@ -5,6 +5,7 @@ import os
 from flask import Flask
 
 
+VERSION = (0, 0, 1)
 APP_ROOT = os.path.abspath(os.path.dirname(__file__))
 SRC_ROOT = os.path.dirname(APP_ROOT)
 
