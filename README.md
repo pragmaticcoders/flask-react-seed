@@ -1,4 +1,4 @@
-# iGoOut-backend
+# flask-react-seed
 ## development
 1. Setup virtualenv
 
