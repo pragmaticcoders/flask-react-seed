@@ -1,9 +1,9 @@
-from .base import Base
+from .base import BaseList
 from .response import response
-from api import VERSION
+from server import VERSION
 
 
-class About(Base):
+class About(BaseList):
 
     @response
     def get(self):

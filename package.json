@@ -2,9 +2,9 @@
   "name": "my-new-project",
   "version": "0.1.0",
   "scripts": {
-    "start": "cd src/app/; DEBUG=true node server.js",
-    "build": "cd src/app/; webpack -p --config webpack.production.js",
-    "build-dev": "cd src/app/; webpack -p"
+    "start": "cd src/client/; DEBUG=true node server.js",
+    "build": "cd src/client/; webpack -p --config webpack.production.js",
+    "build-dev": "cd src/client/; webpack -p"
   },
   "dependencies": {
     "babel-core": "^6.3.15",

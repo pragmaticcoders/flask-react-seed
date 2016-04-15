@@ -4,8 +4,8 @@ import os
 from flask import Blueprint, send_from_directory
 from config import SRC_ROOT
 
-
-STATIC_DIR = os.path.join(SRC_ROOT, 'app', 'dist')
+CLIENT_ROOT = os.path.join(SRC_ROOT, 'client')
+STATIC_DIR = os.path.join(CLIENT_ROOT, 'dist')
 
 
 index_page = Blueprint('index', __name__)
@@ -24,6 +24,6 @@ def static(filename):
 def index(ignored=None):
     global _index_html
     if _index_html is None:
-        with open(os.path.join(SRC_ROOT, 'app', 'index.html')) as index_html:
+        with open(os.path.join(CLIENT_ROOT, 'index.html')) as index_html:
             _index_html = index_html.read()
     return _index_html
