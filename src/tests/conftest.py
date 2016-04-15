@@ -9,11 +9,10 @@ SRC_ROOT = os.path.dirname(TESTS_ROOT)
 
 sys.path.append(SRC_ROOT)
 
-from app import create_app
+from server import create_app
 
 
 app = create_app(
-    static_folder=None,
     config_object='config.DevelopmentTesting'
 )
 
