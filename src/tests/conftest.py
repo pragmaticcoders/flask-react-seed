@@ -20,7 +20,7 @@ app = create_app(
 @pytest.yield_fixture()
 def db():
     with app.app_context():
-        from app.db import db
+        from server.db import db
         db.session.close()
         db.drop_all()
         db.create_all()
