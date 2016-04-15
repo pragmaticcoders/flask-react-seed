@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "start": "cd src/client/; DEBUG=true node server.js",
-    "build": "cd src/client/; webpack -p --config webpack.production.js",
+    "postinstall": "cd src/client/; webpack -p --config webpack.production.js",
     "build-dev": "cd src/client/; webpack -p"
   },
   "dependencies": {
@@ -19,9 +19,13 @@
     "redux-immutablejs": "0.0.8",
     "redux-thunk": "^1.0.3",
     "restful.js": "^0.9.6",
-    "whatwg-fetch": "^0.11.0"
-  },
-  "devDependencies": {
+    "whatwg-fetch": "^0.11.0",
+    "eventsource-polyfill": "^0.9.6",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "path": "^0.12.7",
+    "proxy-middleware": "^0.15.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.0.0",
     "babel-core": "^6.3.15",
     "babel-eslint": "^5.0.0-beta4",
     "babel-loader": "^6.2.0",
@@ -31,17 +35,13 @@
     "babel-preset-stage-0": "^6.3.13",
     "cross-env": "^1.0.6",
     "css-loader": "^0.23.1",
-    "cssnext-loader": "^1.0.1",
+    "cssnext-loader": "^1.0.1"
+  },
+  "devDependencies": {
+    "express": "^4.13.4",
     "eslint": "^1.10.3",
     "eslint-plugin-babel": "^3.0.0",
     "eslint-plugin-react": "^3.11.3",
-    "eventsource-polyfill": "^0.9.6",
-    "express": "^4.13.4",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "path": "^0.12.7",
-    "proxy-middleware": "^0.15.0",
-    "style-loader": "^0.13.1",
-    "webpack": "^1.0.0",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.10.0"
   }
