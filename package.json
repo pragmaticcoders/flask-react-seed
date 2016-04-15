@@ -1,5 +1,5 @@
 {
-  "name": "my-new-project",
+  "name": "flask-react-seed",
   "version": "0.1.0",
   "scripts": {
     "start": "cd src/client/; DEBUG=true node server.js",
